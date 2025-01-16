@@ -7,14 +7,12 @@
 
 import Foundation
 import SwiftUI
+// CountryListView.swift
+
+import SwiftUI
 
 struct CountryListView: View {
-    @StateObject private var viewModel = CountryListViewModel(fetchCountriesUseCase: FetchCountriesUseCase(
-        repository: CountryRepository(
-            localDataSource: LocalDataSource(),
-            remoteDataSource: RemoteDataSource(networkManager: NetworkManager.shared)
-        )
-    ))
+    @StateObject private var viewModel : CountryListViewModel = .init()
 
     var body: some View {
         NavigationView {
@@ -52,7 +50,7 @@ struct CountryListView: View {
                             .padding()
                         }
                     } else {
-                        List(viewModel.countries, id: \.name) { country in
+                        List(viewModel.filteredCountries, id: \ .name) { country in
                             NavigationLink(destination: CountryDetailView(country: country)) {
                                 Text(country.name)
                             }
@@ -60,6 +58,7 @@ struct CountryListView: View {
                     }
                 }
             }
+            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
             .onAppear {
                 viewModel.requestLocation()
                 viewModel.fetchCountries()
@@ -68,6 +67,7 @@ struct CountryListView: View {
         }
     }
 }
+
 
 
 struct CountryDetailView: View {

@@ -12,6 +12,12 @@ import CoreLocation
 
 final class CountryListViewModel: NSObject, ObservableObject {
     @Published var countries: [Country] = []
+    @Published var filteredCountries: [Country] = []
+    @Published var searchText: String = "" {
+        didSet {
+            filterCountries()
+        }
+    }
     @Published var isLoading = false
     @Published var errorMessage: String?
     @Published var userCountry: String = "Egypt" // Default country
@@ -62,6 +68,15 @@ final class CountryListViewModel: NSObject, ObservableObject {
             return country
         } else {
             return countries.first(where: { $0.alpha2Code?.lowercased() == "eg" })
+        }
+    }
+    private func filterCountries() {
+        if searchText.isEmpty {
+            filteredCountries = countries
+        } else {
+            filteredCountries = countries.filter {
+                $0.name.localizedCaseInsensitiveContains(searchText)
+            }
         }
     }
 }

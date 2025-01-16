@@ -14,8 +14,8 @@
             filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "getCountryByName(_:)"
             landmarkType = "7">
             <Locations>
@@ -62,8 +62,8 @@
             filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "getCountryByName(_:)"
             landmarkType = "7">
          </BreakpointContent>
