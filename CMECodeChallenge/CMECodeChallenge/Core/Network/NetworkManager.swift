@@ -14,10 +14,10 @@ final class NetworkManager: NetworkManagerProtocol {
     private init() {}
 
     func request<T: Decodable>(endpoint: EndpointProtocol, responseType: T.Type) -> AnyPublisher<T, Error> {
-        guard let url = endpoint.url else {
-            return Fail(error: NetworkError.invalidURL).eraseToAnyPublisher()
-        }
-
+        
+        guard let url = URL(string: endpoint.url ?? "") else {
+              return Fail(error: NetworkError.invalidURL).eraseToAnyPublisher()
+          }
         var request = URLRequest(url: url)
         request.httpMethod = endpoint.method
         request.allHTTPHeaderFields = endpoint.headers

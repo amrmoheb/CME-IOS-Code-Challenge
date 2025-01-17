@@ -8,7 +8,7 @@
 import Foundation
 
 protocol EndpointProtocol {
-    var url: URL? { get }
+    var url: String? { get }
     var method: String { get }
     var headers: [String: String] { get }
 }

@@ -10,9 +10,6 @@
 		248AF1482D38F0B900620B7E /* CMECodeChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1472D38F0B900620B7E /* CMECodeChallengeApp.swift */; };
 		248AF14C2D38F0BC00620B7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248AF14B2D38F0BC00620B7E /* Assets.xcassets */; };
 		248AF1502D38F0BC00620B7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248AF14F2D38F0BC00620B7E /* Preview Assets.xcassets */; };
-		248AF15A2D38F0BD00620B7E /* CMECodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1592D38F0BD00620B7E /* CMECodeChallengeTests.swift */; };
-		248AF1642D38F0BD00620B7E /* CMECodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1632D38F0BD00620B7E /* CMECodeChallengeUITests.swift */; };
-		248AF1662D38F0BD00620B7E /* CMECodeChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1652D38F0BD00620B7E /* CMECodeChallengeUITestsLaunchTests.swift */; };
 		248AF1742D38F67400620B7E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1732D38F67400620B7E /* NetworkManager.swift */; };
 		248AF1772D38F6F800620B7E /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1762D38F6F800620B7E /* CountryListView.swift */; };
 		248AF1842D38FA3700620B7E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1832D38FA3700620B7E /* Country.swift */; };
@@ -33,17 +30,23 @@
 		248AF1A42D39115C00620B7E /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1A32D39115C00620B7E /* RemoteDataSource.swift */; };
 		248AF1A82D39188100620B7E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1A72D39188100620B7E /* File.swift */; };
 		248AF1AA2D3919C200620B7E /* CountryListViewModel+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1A92D3919C200620B7E /* CountryListViewModel+Location.swift */; };
+		248AF1AE2D395A1B00620B7E /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1AD2D395A1B00620B7E /* MockNetworkManager.swift */; };
+		248AF1B02D395A5C00620B7E /* MockLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1AF2D395A5C00620B7E /* MockLocalDataSource.swift */; };
+		248AF1B22D395A7200620B7E /* MockCountryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1B12D395A7200620B7E /* MockCountryRepository.swift */; };
+		248AF1B42D395A8D00620B7E /* MockFetchCountriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1B32D395A8D00620B7E /* MockFetchCountriesUseCase.swift */; };
+		248AF1B62D395ABD00620B7E /* MockCountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1B52D395ABD00620B7E /* MockCountryService.swift */; };
+		248AF1BB2D395B5700620B7E /* CountryListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1BA2D395B5700620B7E /* CountryListViewModelTests.swift */; };
+		248AF1C22D395C7100620B7E /* FetchCountriesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1C12D395C7100620B7E /* FetchCountriesUseCaseTests.swift */; };
+		248AF1C52D395CBE00620B7E /* CountryRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1C42D395CBE00620B7E /* CountryRepositoryTests.swift */; };
+		248AF1C72D395D9600620B7E /* CountryServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1C62D395D9600620B7E /* CountryServiceTests.swift */; };
+		248AF1D12D3A61BE00620B7E /* MockGetCountriesEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1D02D3A61BE00620B7E /* MockGetCountriesEndPoint.swift */; };
+		248AF1D52D3A8BC600620B7E /* MockRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1D42D3A8BC600620B7E /* MockRemoteDataSource.swift */; };
+		248AF1D72D3A986200620B7E /* CountriesListSuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 248AF1D62D3A986200620B7E /* CountriesListSuccessResponse.json */; };
+		248AF1D92D3A9A8900620B7E /* CountriesListFailureResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 248AF1D82D3A9A8900620B7E /* CountriesListFailureResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		248AF1562D38F0BD00620B7E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 248AF13C2D38F0B900620B7E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 248AF1432D38F0B900620B7E;
-			remoteInfo = CMECodeChallenge;
-		};
-		248AF1602D38F0BD00620B7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 248AF13C2D38F0B900620B7E /* Project object */;
 			proxyType = 1;
@@ -59,10 +62,6 @@
 		248AF14D2D38F0BC00620B7E /* CMECodeChallenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CMECodeChallenge.entitlements; sourceTree = "<group>"; };
 		248AF14F2D38F0BC00620B7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		248AF1552D38F0BD00620B7E /* CMECodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMECodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		248AF1592D38F0BD00620B7E /* CMECodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMECodeChallengeTests.swift; sourceTree = "<group>"; };
-		248AF15F2D38F0BD00620B7E /* CMECodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMECodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		248AF1632D38F0BD00620B7E /* CMECodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMECodeChallengeUITests.swift; sourceTree = "<group>"; };
-		248AF1652D38F0BD00620B7E /* CMECodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMECodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		248AF1732D38F67400620B7E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		248AF1762D38F6F800620B7E /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
 		248AF1832D38FA3700620B7E /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -83,6 +82,19 @@
 		248AF1A32D39115C00620B7E /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		248AF1A72D39188100620B7E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		248AF1A92D3919C200620B7E /* CountryListViewModel+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountryListViewModel+Location.swift"; sourceTree = "<group>"; };
+		248AF1AD2D395A1B00620B7E /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		248AF1AF2D395A5C00620B7E /* MockLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalDataSource.swift; sourceTree = "<group>"; };
+		248AF1B12D395A7200620B7E /* MockCountryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCountryRepository.swift; sourceTree = "<group>"; };
+		248AF1B32D395A8D00620B7E /* MockFetchCountriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchCountriesUseCase.swift; sourceTree = "<group>"; };
+		248AF1B52D395ABD00620B7E /* MockCountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCountryService.swift; sourceTree = "<group>"; };
+		248AF1BA2D395B5700620B7E /* CountryListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModelTests.swift; sourceTree = "<group>"; };
+		248AF1C12D395C7100620B7E /* FetchCountriesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountriesUseCaseTests.swift; sourceTree = "<group>"; };
+		248AF1C42D395CBE00620B7E /* CountryRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRepositoryTests.swift; sourceTree = "<group>"; };
+		248AF1C62D395D9600620B7E /* CountryServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryServiceTests.swift; sourceTree = "<group>"; };
+		248AF1D02D3A61BE00620B7E /* MockGetCountriesEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetCountriesEndPoint.swift; sourceTree = "<group>"; };
+		248AF1D42D3A8BC600620B7E /* MockRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoteDataSource.swift; sourceTree = "<group>"; };
+		248AF1D62D3A986200620B7E /* CountriesListSuccessResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountriesListSuccessResponse.json; sourceTree = "<group>"; };
+		248AF1D82D3A9A8900620B7E /* CountriesListFailureResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountriesListFailureResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +112,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		248AF15C2D38F0BD00620B7E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -115,7 +120,6 @@
 			children = (
 				248AF1462D38F0B900620B7E /* CMECodeChallenge */,
 				248AF1582D38F0BD00620B7E /* CMECodeChallengeTests */,
-				248AF1622D38F0BD00620B7E /* CMECodeChallengeUITests */,
 				248AF1452D38F0B900620B7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,7 +129,6 @@
 			children = (
 				248AF1442D38F0B900620B7E /* CMECodeChallenge.app */,
 				248AF1552D38F0BD00620B7E /* CMECodeChallengeTests.xctest */,
-				248AF15F2D38F0BD00620B7E /* CMECodeChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,18 +157,10 @@
 		248AF1582D38F0BD00620B7E /* CMECodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				248AF1592D38F0BD00620B7E /* CMECodeChallengeTests.swift */,
+				248AF1CC2D3A603D00620B7E /* Json Files */,
+				248AF1AB2D395A0000620B7E /* Screens */,
 			);
 			path = CMECodeChallengeTests;
-			sourceTree = "<group>";
-		};
-		248AF1622D38F0BD00620B7E /* CMECodeChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				248AF1632D38F0BD00620B7E /* CMECodeChallengeUITests.swift */,
-				248AF1652D38F0BD00620B7E /* CMECodeChallengeUITestsLaunchTests.swift */,
-			);
-			path = CMECodeChallengeUITests;
 			sourceTree = "<group>";
 		};
 		248AF1722D38F64E00620B7E /* Network */ = {
@@ -322,6 +317,105 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		248AF1AB2D395A0000620B7E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1AC2D395A0A00620B7E /* CountryListScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		248AF1AC2D395A0A00620B7E /* CountryListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1B82D395B1600620B7E /* Presentation */,
+				248AF1B72D395B0700620B7E /* Mocks */,
+			);
+			path = CountryListScreen;
+			sourceTree = "<group>";
+		};
+		248AF1B72D395B0700620B7E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1AD2D395A1B00620B7E /* MockNetworkManager.swift */,
+				248AF1AF2D395A5C00620B7E /* MockLocalDataSource.swift */,
+				248AF1B12D395A7200620B7E /* MockCountryRepository.swift */,
+				248AF1B32D395A8D00620B7E /* MockFetchCountriesUseCase.swift */,
+				248AF1B52D395ABD00620B7E /* MockCountryService.swift */,
+				248AF1D02D3A61BE00620B7E /* MockGetCountriesEndPoint.swift */,
+				248AF1D42D3A8BC600620B7E /* MockRemoteDataSource.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		248AF1B82D395B1600620B7E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1BD2D395BA900620B7E /* Domain */,
+				248AF1BC2D395BA300620B7E /* Data */,
+				248AF1B92D395B2500620B7E /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		248AF1B92D395B2500620B7E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1BA2D395B5700620B7E /* CountryListViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		248AF1BC2D395BA300620B7E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1BF2D395BC500620B7E /* Service */,
+				248AF1BE2D395BB500620B7E /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		248AF1BD2D395BA900620B7E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1C02D395BCD00620B7E /* Use Cases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		248AF1BE2D395BB500620B7E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1C42D395CBE00620B7E /* CountryRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		248AF1BF2D395BC500620B7E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1C62D395D9600620B7E /* CountryServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		248AF1C02D395BCD00620B7E /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1C12D395C7100620B7E /* FetchCountriesUseCaseTests.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		248AF1CC2D3A603D00620B7E /* Json Files */ = {
+			isa = PBXGroup;
+			children = (
+				248AF1D62D3A986200620B7E /* CountriesListSuccessResponse.json */,
+				248AF1D82D3A9A8900620B7E /* CountriesListFailureResponse.json */,
+			);
+			path = "Json Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -360,24 +454,6 @@
 			productReference = 248AF1552D38F0BD00620B7E /* CMECodeChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		248AF15E2D38F0BD00620B7E /* CMECodeChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 248AF16F2D38F0BD00620B7E /* Build configuration list for PBXNativeTarget "CMECodeChallengeUITests" */;
-			buildPhases = (
-				248AF15B2D38F0BD00620B7E /* Sources */,
-				248AF15C2D38F0BD00620B7E /* Frameworks */,
-				248AF15D2D38F0BD00620B7E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				248AF1612D38F0BD00620B7E /* PBXTargetDependency */,
-			);
-			name = CMECodeChallengeUITests;
-			productName = CMECodeChallengeUITests;
-			productReference = 248AF15F2D38F0BD00620B7E /* CMECodeChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -392,10 +468,6 @@
 						CreatedOnToolsVersion = 15.0.1;
 					};
 					248AF1542D38F0BD00620B7E = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 248AF1432D38F0B900620B7E;
-					};
-					248AF15E2D38F0BD00620B7E = {
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 248AF1432D38F0B900620B7E;
 					};
@@ -416,7 +488,6 @@
 			targets = (
 				248AF1432D38F0B900620B7E /* CMECodeChallenge */,
 				248AF1542D38F0BD00620B7E /* CMECodeChallengeTests */,
-				248AF15E2D38F0BD00620B7E /* CMECodeChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -435,13 +506,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		248AF15D2D38F0BD00620B7E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				248AF1D72D3A986200620B7E /* CountriesListSuccessResponse.json in Resources */,
+				248AF1D92D3A9A8900620B7E /* CountriesListFailureResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,16 +546,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248AF15A2D38F0BD00620B7E /* CMECodeChallengeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		248AF15B2D38F0BD00620B7E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				248AF1642D38F0BD00620B7E /* CMECodeChallengeUITests.swift in Sources */,
-				248AF1662D38F0BD00620B7E /* CMECodeChallengeUITestsLaunchTests.swift in Sources */,
+				248AF1D12D3A61BE00620B7E /* MockGetCountriesEndPoint.swift in Sources */,
+				248AF1B22D395A7200620B7E /* MockCountryRepository.swift in Sources */,
+				248AF1C72D395D9600620B7E /* CountryServiceTests.swift in Sources */,
+				248AF1C22D395C7100620B7E /* FetchCountriesUseCaseTests.swift in Sources */,
+				248AF1C52D395CBE00620B7E /* CountryRepositoryTests.swift in Sources */,
+				248AF1B42D395A8D00620B7E /* MockFetchCountriesUseCase.swift in Sources */,
+				248AF1B02D395A5C00620B7E /* MockLocalDataSource.swift in Sources */,
+				248AF1D52D3A8BC600620B7E /* MockRemoteDataSource.swift in Sources */,
+				248AF1BB2D395B5700620B7E /* CountryListViewModelTests.swift in Sources */,
+				248AF1B62D395ABD00620B7E /* MockCountryService.swift in Sources */,
+				248AF1AE2D395A1B00620B7E /* MockNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,11 +567,6 @@
 			isa = PBXTargetDependency;
 			target = 248AF1432D38F0B900620B7E /* CMECodeChallenge */;
 			targetProxy = 248AF1562D38F0BD00620B7E /* PBXContainerItemProxy */;
-		};
-		248AF1612D38F0BD00620B7E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 248AF1432D38F0B900620B7E /* CMECodeChallenge */;
-			targetProxy = 248AF1602D38F0BD00620B7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -749,50 +811,6 @@
 			};
 			name = Release;
 		};
-		248AF1702D38F0BD00620B7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KB6TXDC42N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.-AdvancedTesting.AT.CMECodeChallengeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CMECodeChallenge;
-			};
-			name = Debug;
-		};
-		248AF1712D38F0BD00620B7E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KB6TXDC42N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.-AdvancedTesting.AT.CMECodeChallengeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CMECodeChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -819,15 +837,6 @@
 			buildConfigurations = (
 				248AF16D2D38F0BD00620B7E /* Debug */,
 				248AF16E2D38F0BD00620B7E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		248AF16F2D38F0BD00620B7E /* Build configuration list for PBXNativeTarget "CMECodeChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				248AF1702D38F0BD00620B7E /* Debug */,
-				248AF1712D38F0BD00620B7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

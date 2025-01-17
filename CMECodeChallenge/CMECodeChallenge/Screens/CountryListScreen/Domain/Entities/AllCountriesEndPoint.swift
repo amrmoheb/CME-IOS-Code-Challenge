@@ -9,10 +9,10 @@ import Foundation
 enum AllCountriesEndPoint: EndpointProtocol {
     case allCountries
 
-    var url: URL? {
+    var url: String? {
         switch self {
         case .allCountries:
-            return URL(string: "https://restcountries.com/v2/all")
+            return "https://restcountries.com/v2/all"
         }
     }
 
