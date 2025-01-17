@@ -45,4 +45,21 @@ final class CountryServiceTests: XCTestCase {
 
         wait(for: [expectation], timeout: 5.0)
     }
+    
+    func testGetCountriesFailure() {
+        let expectation = XCTestExpectation(description: "Handle failure when fetching countries")
+        service.endPoint = MockCountriesFailureEndpoint.allCountries
+        service.getCountries()
+            .sink(receiveCompletion: { completion in
+                if case .failure(let error) = completion {
+                    XCTAssertNotNil(error)
+                    expectation.fulfill()
+                }
+            }, receiveValue: { _ in
+                XCTFail("Request should fail")
+            })
+            .store(in: &cancellables)
+
+        wait(for: [expectation], timeout: 5.0)
+    }
 }

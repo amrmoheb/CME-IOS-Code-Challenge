@@ -46,4 +46,22 @@ final class FetchCountriesUseCaseTests: XCTestCase {
 
         wait(for: [expectation], timeout: 5.0)
     }
+    
+    func testExecuteFailure() {
+        mockRepository.response = .failure(NetworkError.customError("Failed to fetch countries"))
+        let expectation = XCTestExpectation(description: "Handle failure when fetching countries")
+
+        useCase.execute(forceRefresh: true)
+            .sink(receiveCompletion: { completion in
+                if case .failure(let error) = completion {
+                    XCTAssertEqual(error.localizedDescription, "Failed to fetch countries", "Error message should match")
+                    expectation.fulfill()
+                }
+            }, receiveValue: { _ in
+                XCTFail("Request should fail")
+            })
+            .store(in: &cancellables)
+
+        wait(for: [expectation], timeout: 5.0)
+    }
 }

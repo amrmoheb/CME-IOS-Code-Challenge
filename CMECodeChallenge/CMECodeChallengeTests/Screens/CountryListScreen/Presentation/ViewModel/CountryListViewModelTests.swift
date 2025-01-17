@@ -45,4 +45,21 @@ final class CountryListViewModelTests: XCTestCase {
 
         wait(for: [expectation], timeout: 5.0)
     }
+    
+    func testFetchCountriesFailure() {
+        mockUseCase.response = .failure(NetworkError.customError("Failed to fetch countries"))
+        let expectation = XCTestExpectation(description: "Handle failure when fetching countries")
+
+        viewModel.fetchCountries()
+
+        viewModel.$errorMessage
+            .dropFirst()
+            .sink { errorMessage in
+                XCTAssertEqual(errorMessage, "Failed to fetch countries", "Error message should match")
+                expectation.fulfill()
+            }
+            .store(in: &cancellables)
+
+        wait(for: [expectation], timeout: 5.0)
+    }
 }
