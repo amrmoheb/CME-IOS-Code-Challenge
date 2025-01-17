@@ -43,6 +43,7 @@
 		248AF1D72D3A986200620B7E /* CountriesListSuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 248AF1D62D3A986200620B7E /* CountriesListSuccessResponse.json */; };
 		248AF1D92D3A9A8900620B7E /* CountriesListFailureResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 248AF1D82D3A9A8900620B7E /* CountriesListFailureResponse.json */; };
 		248AF1DC2D3AAF1600620B7E /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1DB2D3AAF1600620B7E /* ViewState.swift */; };
+		248AF1DE2D3AC62800620B7E /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1DD2D3AC62800620B7E /* CountryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		248AF1D62D3A986200620B7E /* CountriesListSuccessResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountriesListSuccessResponse.json; sourceTree = "<group>"; };
 		248AF1D82D3A9A8900620B7E /* CountriesListFailureResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountriesListFailureResponse.json; sourceTree = "<group>"; };
 		248AF1DB2D3AAF1600620B7E /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		248AF1DD2D3AC62800620B7E /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				248AF1762D38F6F800620B7E /* CountryListView.swift */,
+				248AF1DD2D3AC62800620B7E /* CountryDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				248AF1942D390A9900620B7E /* CountryRepositoryProtocol.swift in Sources */,
 				248AF1A22D3910E500620B7E /* RemoteDataSourceProtocol.swift in Sources */,
 				248AF1892D38FC1B00620B7E /* AllCountriesEndPoint.swift in Sources */,
+				248AF1DE2D3AC62800620B7E /* CountryDetailView.swift in Sources */,
 				248AF18E2D3907FA00620B7E /* EndPointProtocol.swift in Sources */,
 				248AF1482D38F0B900620B7E /* CMECodeChallengeApp.swift in Sources */,
 				248AF19A2D390AEB00620B7E /* CountryService.swift in Sources */,

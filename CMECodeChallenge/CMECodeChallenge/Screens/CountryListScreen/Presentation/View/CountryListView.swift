@@ -10,11 +10,7 @@ import SwiftUI
 
 struct CountryListView: View {
     @StateObject private var viewModel: CountryListViewModel = .init()
-    
     @State private var isSheetPresented: Bool = false
-    @State private var showAlert: Bool = false
-    @State private var alertMessage: String = ""
-    @State private var errorMessage: String = ""
 
     var body: some View {
         NavigationView {
@@ -63,15 +59,14 @@ struct CountryListView: View {
                 Spacer()
             }
             .sheet(isPresented: $isSheetPresented) {
-                CountrySelectionSheet(viewModel: viewModel, selectedCountries: $viewModel.selectedCountries, isSheetPresented: $isSheetPresented, showAlert: $showAlert, viewState: $viewModel.viewState)
-            }
-            .alert(isPresented: $showAlert) {
-                Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                CountrySelectionSheet(filteredCountries: $viewModel.filteredCountries, selectedCountries: $viewModel.selectedCountries, isSheetPresented: $isSheetPresented, viewState: $viewModel.viewState,searchText: $viewModel.searchText)
             }
             .navigationTitle("Countries")
         }
     }
-
+//    var selectedCountries: some View {
+//        
+//    }
     private func removeFromSelected(_ country: Country) {
         viewModel.selectedCountries.removeAll(where: { $0.name == country.name })
         viewModel.viewState = .success(message: "Country is removed Successfully.")
@@ -79,21 +74,21 @@ struct CountryListView: View {
 }
 
 struct CountrySelectionSheet: View {
-    @ObservedObject var viewModel: CountryListViewModel
+    @Binding var filteredCountries: [Country]
     @Binding var selectedCountries: [Country]
     @Binding var isSheetPresented: Bool
-    @Binding var showAlert: Bool
     @Binding var viewState: ViewState?
+    @Binding var searchText: String
     var body: some View {
         NavigationView {
-            List(viewModel.filteredCountries, id: \ .name) { country in
+            List(filteredCountries, id: \ .name) { country in
                 Button(action: {
                     addCountry(country)
                 }) {
                     Text(country.name)
                 }
             }
-            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
             .navigationTitle("Select a Country")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -112,46 +107,11 @@ struct CountrySelectionSheet: View {
         } else if selectedCountries.count < 5 {
             selectedCountries.append(country)
             isSheetPresented = false
-            viewModel.viewState = .success(message: "Country added to the list.")
+            viewState = .success(message: "Country added to the list.")
           
         } else {
             isSheetPresented = false
-            viewModel.viewState = .failure(message: "You can only add up to 5 countries.")
+            viewState = .failure(message: "You can only add up to 5 countries.")
         }
-    }
-}
-
-
-struct CountryDetailView: View {
-    let country: Country
-
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                if let capital = country.capital {
-                    Text("Capital: \(capital)")
-                        .font(.headline)
-                }
-
-                if let currency = country.currencies?.first {
-                    Text("Currency: \(currency.name ?? "")")
-                        .font(.headline)
-                }
-
-                Spacer()
-            }
-            .padding()
-        }
-        .navigationTitle(country.name)
-    }
-}
-
-// MARK: - Number Formatting Extension
-
-extension Int {
-    func formattedWithSeparator() -> String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        return formatter.string(for: self) ?? ""
     }
 }
