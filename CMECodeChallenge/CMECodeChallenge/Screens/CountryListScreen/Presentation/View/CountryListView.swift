@@ -128,32 +128,13 @@ struct CountryDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                if let flagURL = country.flag, let url = URL(string: flagURL) {
-                    AsyncImage(url: url) { image in
-                        image.resizable()
-                    } placeholder: {
-                        ProgressView()
-                    }
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 200)
-                }
-
-                Text(country.name)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-
                 if let capital = country.capital {
                     Text("Capital: \(capital)")
                         .font(.headline)
                 }
 
-                if let region = country.region {
-                    Text("Region: \(region)")
-                        .font(.headline)
-                }
-
-                if let population = country.population {
-                    Text("Population: \(population.formattedWithSeparator())")
+                if let currency = country.currencies?.first {
+                    Text("Currency: \(currency.name ?? "")")
                         .font(.headline)
                 }
 
