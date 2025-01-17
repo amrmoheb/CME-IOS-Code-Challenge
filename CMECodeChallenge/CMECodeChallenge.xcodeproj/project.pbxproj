@@ -44,6 +44,7 @@
 		248AF1D92D3A9A8900620B7E /* CountriesListFailureResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 248AF1D82D3A9A8900620B7E /* CountriesListFailureResponse.json */; };
 		248AF1DC2D3AAF1600620B7E /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1DB2D3AAF1600620B7E /* ViewState.swift */; };
 		248AF1DE2D3AC62800620B7E /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1DD2D3AC62800620B7E /* CountryDetailView.swift */; };
+		248AF1E02D3AC8AC00620B7E /* CountrySelectionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1DF2D3AC8AC00620B7E /* CountrySelectionSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		248AF1D82D3A9A8900620B7E /* CountriesListFailureResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountriesListFailureResponse.json; sourceTree = "<group>"; };
 		248AF1DB2D3AAF1600620B7E /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		248AF1DD2D3AC62800620B7E /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		248AF1DF2D3AC8AC00620B7E /* CountrySelectionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionSheet.swift; sourceTree = "<group>"; };
+		248AF1E12D3AD26600620B7E /* CMECodeChallenge.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = CMECodeChallenge.xctestplan; path = ../CMECodeChallenge.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,7 @@
 		248AF13B2D38F0B900620B7E = {
 			isa = PBXGroup;
 			children = (
+				248AF1E12D3AD26600620B7E /* CMECodeChallenge.xctestplan */,
 				248AF1462D38F0B900620B7E /* CMECodeChallenge */,
 				248AF1582D38F0BD00620B7E /* CMECodeChallengeTests */,
 				248AF1452D38F0B900620B7E /* Products */,
@@ -207,6 +211,7 @@
 			children = (
 				248AF1762D38F6F800620B7E /* CountryListView.swift */,
 				248AF1DD2D3AC62800620B7E /* CountryDetailView.swift */,
+				248AF1DF2D3AC8AC00620B7E /* CountrySelectionSheet.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 				248AF1742D38F67400620B7E /* NetworkManager.swift in Sources */,
 				248AF1922D390A7600620B7E /* FetchCountriesUseCase.swift in Sources */,
 				248AF19E2D39107300620B7E /* LocalDataSource.swift in Sources */,
+				248AF1E02D3AC8AC00620B7E /* CountrySelectionSheet.swift in Sources */,
 				248AF1942D390A9900620B7E /* CountryRepositoryProtocol.swift in Sources */,
 				248AF1A22D3910E500620B7E /* RemoteDataSourceProtocol.swift in Sources */,
 				248AF1892D38FC1B00620B7E /* AllCountriesEndPoint.swift in Sources */,

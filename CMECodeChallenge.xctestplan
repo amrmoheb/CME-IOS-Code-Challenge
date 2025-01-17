@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "1A1EC65E-BCFB-469B-829B-B708BC5859ED",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CMECodeChallenge.xcodeproj",
+        "identifier" : "248AF1542D38F0BD00620B7E",
+        "name" : "CMECodeChallengeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

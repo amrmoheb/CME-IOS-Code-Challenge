@@ -12,7 +12,7 @@ enum AllCountriesEndPoint: EndpointProtocol {
     var url: String? {
         switch self {
         case .allCountries:
-            return "https://restcountries.com/v2/all"
+            return "/v2/all"
         }
     }
 

@@ -13,7 +13,7 @@ extension CountryListViewModel: CLLocationManagerDelegate {
         switch manager.authorizationStatus {
         case .authorizedWhenInUse, .authorizedAlways:
             manager.startUpdatingLocation()
-        case .denied, .restricted:
+        case .denied, .restricted: 
             setDefaultCountry(userCountry: "eg") // Default country
         default:
             break
@@ -27,7 +27,17 @@ extension CountryListViewModel: CLLocationManagerDelegate {
     }
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        setDefaultCountry(userCountry: "eg") // Default country
+        let authorizationStatus: CLAuthorizationStatus
+           
+           // Check the authorization status based on the platform
+           if #available(iOS 14.0, *) {
+               authorizationStatus = manager.authorizationStatus
+           } else {
+               authorizationStatus = CLLocationManager.authorizationStatus()
+           }
+        if authorizationStatus != .notDetermined {
+            setDefaultCountry(userCountry: "eg") // Default country
+            }
     }
 
     private func reverseGeocode(location: CLLocation) {
@@ -44,8 +54,9 @@ extension CountryListViewModel: CLLocationManagerDelegate {
         }
     }
     private func setDefaultCountry(userCountry: String) {
-        if let country = self.getCountryByISOCode(userCountry) {
-            self.selectedCountries.append(country)
+        if let country = self.getCountryByISOCode(userCountry),
+           !self.selectedCountries.contains(where: { $0.name == country.name }) {
+            self.selectedCountries = [country]
         }
     }
 }

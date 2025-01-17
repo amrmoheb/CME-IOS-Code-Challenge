@@ -39,7 +39,6 @@ final class CountryListViewModel: NSObject, ObservableObject {
     func fetchCountries(forceRefresh: Bool = false) {
         isLoading = true
         errorMessage = nil
-
         fetchCountriesUseCase.execute(forceRefresh: forceRefresh)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
@@ -63,9 +62,6 @@ final class CountryListViewModel: NSObject, ObservableObject {
         locationManager.startUpdatingLocation()
     }
 
-    func getCountryByName(_ name: String) -> Country? {
-        countries.first(where: { $0.name.lowercased() == name.lowercased() })
-    }
     func getCountryByISOCode(_ isoCode: String) -> Country? {
         
         if let country = countries.first(where: { $0.alpha2Code?.lowercased() == isoCode.lowercased() }) {
@@ -74,6 +70,7 @@ final class CountryListViewModel: NSObject, ObservableObject {
             return countries.first(where: { $0.alpha2Code?.lowercased() == "eg" })
         }
     }
+    
     private func filterCountries() {
         if searchText.isEmpty {
             filteredCountries = countries
@@ -82,6 +79,11 @@ final class CountryListViewModel: NSObject, ObservableObject {
                 $0.name.localizedCaseInsensitiveContains(searchText)
             }
         }
+    }
+    
+    func removeFromSelected(_ country: Country) {
+        selectedCountries.removeAll(where: { $0.name == country.name })
+        viewState = .success(message: "Country is removed Successfully.")
     }
 }
 

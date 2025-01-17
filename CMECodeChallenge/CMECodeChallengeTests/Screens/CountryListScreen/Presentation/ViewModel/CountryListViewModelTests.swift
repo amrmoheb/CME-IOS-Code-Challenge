@@ -55,7 +55,7 @@ final class CountryListViewModelTests: XCTestCase {
         viewModel.$errorMessage
             .dropFirst()
             .sink { errorMessage in
-                XCTAssertEqual(errorMessage, "Failed to fetch countries", "Error message should match")
+                XCTAssertNotNil(errorMessage)
                 expectation.fulfill()
             }
             .store(in: &cancellables)

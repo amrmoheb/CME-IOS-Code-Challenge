@@ -7,100 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BD893732-CC37-4AC2-9BCF-A7FA4010F54E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "getCountryByName(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BD893732-CC37-4AC2-9BCF-A7FA4010F54E - 27f717cd53b41f49"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CMECodeChallenge.CountryListViewModel.getCountryByName(Swift.String) -&gt; Swift.Optional&lt;CMECodeChallenge.Country&gt;"
-                  moduleName = "CMECodeChallenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "BD893732-CC37-4AC2-9BCF-A7FA4010F54E - 65b2af12d1ee4f51"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (CMECodeChallenge.Country) -&gt; Swift.Bool in CMECodeChallenge.CountryListViewModel.getCountryByName(Swift.String) -&gt; Swift.Optional&lt;CMECodeChallenge.Country&gt;"
-                  moduleName = "CMECodeChallenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  uuid = "BD893732-CC37-4AC2-9BCF-A7FA4010F54E - 27f717cd53b5e013"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CMECodeChallenge.CountryListViewModel.getCountryByName(Swift.String) -&gt; Swift.Optional&lt;CMECodeChallenge.Country&gt;"
-                  moduleName = "CMECodeChallenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "BD893732-CC37-4AC2-9BCF-A7FA4010F54E - 65b2af12d1efb00b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (CMECodeChallenge.Country) -&gt; Swift.Bool in CMECodeChallenge.CountryListViewModel.getCountryByName(Swift.String) -&gt; Swift.Optional&lt;CMECodeChallenge.Country&gt;"
-                  moduleName = "CMECodeChallenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "72">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "18DAE6E5-97A0-49A4-ACD8-3AB053521681"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "getCountryByName(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "72F751B3-A856-4D21-AF74-083E3C48B9CA"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -694,16 +600,48 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8FB3233D-5A4E-4E43-9C8C-5CE6D39FFC57"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "fetchCountries(forceRefresh:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8FB3233D-5A4E-4E43-9C8C-5CE6D39FFC57 - 3f4bad2ae629071d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;CMECodeChallenge.NetworkError&gt;) -&gt; () in CMECodeChallenge.CountryListViewModel.fetchCountries(forceRefresh: Swift.Bool) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "8FB3233D-5A4E-4E43-9C8C-5CE6D39FFC57 - 3f4bad2ae629077e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;CMECodeChallenge.NetworkError&gt;) -&gt; () in CMECodeChallenge.CountryListViewModel.fetchCountries(forceRefresh: Swift.Bool) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -716,8 +654,8 @@
             filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "fetchCountries(forceRefresh:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -726,7 +664,388 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DDCB2AA5-D579-4F49-B2F8-DDFFD8993D47"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "fetchCountries(forceRefresh:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DDCB2AA5-D579-4F49-B2F8-DDFFD8993D47 - 3f4bad2ae62904fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;CMECodeChallenge.NetworkError&gt;) -&gt; () in CMECodeChallenge.CountryListViewModel.fetchCountries(forceRefresh: Swift.Bool) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "DDCB2AA5-D579-4F49-B2F8-DDFFD8993D47 - 3f4bad2ae62904db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;CMECodeChallenge.NetworkError&gt;) -&gt; () in CMECodeChallenge.CountryListViewModel.fetchCountries(forceRefresh: Swift.Bool) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "356">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF49CBA5-5061-4420-AD10-94BC350D6B7F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "fetchCountries(forceRefresh:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AF49CBA5-5061-4420-AD10-94BC350D6B7F - e2b834c20232f40d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;CMECodeChallenge.Country&gt;) -&gt; () in CMECodeChallenge.CountryListViewModel.fetchCountries(forceRefresh: Swift.Bool) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "AF49CBA5-5061-4420-AD10-94BC350D6B7F - e2b834c20232f46e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;CMECodeChallenge.Country&gt;) -&gt; () in CMECodeChallenge.CountryListViewModel.fetchCountries(forceRefresh: Swift.Bool) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6EF4A845-8E31-4503-B0B7-0877232B09D9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "locationManager(_:didFailWithError:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6EF4A845-8E31-4503-B0B7-0877232B09D9 - abcdc05ecd8dd062"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.locationManager(_: __C.CLLocationManager, didFailWithError: Swift.Error) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "6EF4A845-8E31-4503-B0B7-0877232B09D9 - abcdc05ecd8dd7d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.locationManager(_: __C.CLLocationManager, didFailWithError: Swift.Error) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52829220-7D41-45C8-86E0-E2E3E09FF170"
             shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "reverseGeocode(location:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52829220-7D41-45C8-86E0-E2E3E09FF170 - 17ff12c5e65b1f3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CLPlacemark&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CMECodeChallenge.CountryListViewModel.reverseGeocode(location: __C.CLLocation) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "52829220-7D41-45C8-86E0-E2E3E09FF170 - 17ff12c5e65b1e72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CLPlacemark&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CMECodeChallenge.CountryListViewModel.reverseGeocode(location: __C.CLLocation) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F9E55F1-3610-44C1-8B9A-8C05FDF033F9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "locationManagerDidChangeAuthorization(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F9E55F1-3610-44C1-8B9A-8C05FDF033F9 - 2e6e76a0f0574dc9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.locationManagerDidChangeAuthorization(__C.CLLocationManager) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "4F9E55F1-3610-44C1-8B9A-8C05FDF033F9 - 2e6e76a0f0574d0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.locationManagerDidChangeAuthorization(__C.CLLocationManager) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAC3DA1E-9E7F-4A48-BA30-5960C687BB1E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "setDefaultCountry(userCountry:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAC3DA1E-9E7F-4A48-BA30-5960C687BB1E - b0f56d91abd40a0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.setDefaultCountry(userCountry: Swift.String) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "DAC3DA1E-9E7F-4A48-BA30-5960C687BB1E - b0f56d91abd40a0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.setDefaultCountry(userCountry: Swift.String) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "DAC3DA1E-9E7F-4A48-BA30-5960C687BB1E - b0f56d91abd409f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.setDefaultCountry(userCountry: Swift.String) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "DAC3DA1E-9E7F-4A48-BA30-5960C687BB1E - b0f56d91abd409f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.setDefaultCountry(userCountry: Swift.String) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F2FCEB3-2712-437B-836A-E47570506AA4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "setDefaultCountry(userCountry:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F2FCEB3-2712-437B-836A-E47570506AA4 - b0f56d91abd40acc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.setDefaultCountry(userCountry: Swift.String) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  uuid = "7F2FCEB3-2712-437B-836A-E47570506AA4 - b0f56d91abd40acc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.setDefaultCountry(userCountry: Swift.String) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "7F2FCEB3-2712-437B-836A-E47570506AA4 - b0f56d91abd409b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.setDefaultCountry(userCountry: Swift.String) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel+Location.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "348">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A092708B-8D09-4754-945E-0941F4F84CF2"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
@@ -736,22 +1055,53 @@
             endingLineNumber = "51"
             landmarkName = "fetchCountries(forceRefresh:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AF49CBA5-5061-4420-AD10-94BC350D6B7F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "fetchCountries(forceRefresh:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A092708B-8D09-4754-945E-0941F4F84CF2 - 8d9bad864423dcfb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMECodeChallenge.CountryListViewModel.fetchCountries(forceRefresh: Swift.Bool) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "652">
+               </Location>
+               <Location
+                  uuid = "A092708B-8D09-4754-945E-0941F4F84CF2 - 3f4bad2ae6290415"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;CMECodeChallenge.NetworkError&gt;) -&gt; () in CMECodeChallenge.CountryListViewModel.fetchCountries(forceRefresh: Swift.Bool) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "620">
+               </Location>
+               <Location
+                  uuid = "A092708B-8D09-4754-945E-0941F4F84CF2 - e2b834c20232f40d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;CMECodeChallenge.Country&gt;) -&gt; () in CMECodeChallenge.CountryListViewModel.fetchCountries(forceRefresh: Swift.Bool) -&gt; ()"
+                  moduleName = "CMECodeChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amrmoheb/Documents/CMEIOSCodeChallang/CME-IOS-Code-Challenge/CMECodeChallenge/CMECodeChallenge/Screens/CountryListScreen/Presentation/ViewModel/CountryListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

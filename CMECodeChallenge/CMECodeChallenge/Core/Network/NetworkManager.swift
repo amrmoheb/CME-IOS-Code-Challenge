@@ -11,11 +11,12 @@ import Combine
 // MARK: - Network Manager
 final class NetworkManager: NetworkManagerProtocol {
     static let shared = NetworkManager()
+    let baseURL: String = "https://restcountries.com"
     private init() {}
 
     func request<T: Decodable>(endpoint: EndpointProtocol, responseType: T.Type) -> AnyPublisher<T, Error> {
         
-        guard let url = URL(string: endpoint.url ?? "") else {
+        guard let url = URL(string: (baseURL + (endpoint.url ?? "")) ?? "") else {
               return Fail(error: NetworkError.invalidURL).eraseToAnyPublisher()
           }
         var request = URLRequest(url: url)
