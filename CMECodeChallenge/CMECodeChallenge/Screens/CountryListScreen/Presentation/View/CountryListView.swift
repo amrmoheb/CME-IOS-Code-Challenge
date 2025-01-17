@@ -7,65 +7,6 @@
 
 import Foundation
 import SwiftUI
-/*
-struct CountryListView: View {
-    @StateObject private var viewModel : CountryListViewModel = .init()
-
-    var body: some View {
-        NavigationView {
-            VStack {
-                Section(header: Text("Your Country")) {
-                    if let userCountry = viewModel.getCountryByISOCode(viewModel.userCountry) {
-                        NavigationLink(destination: CountryDetailView(country: userCountry)) {
-                            HStack {
-                                Text(userCountry.name)
-                                    .font(.headline)
-                                Spacer()
-                                Text("(Detected)")
-                                    .foregroundColor(.secondary)
-                            }
-                        }
-                        .padding()
-                    } else {
-                        Text("No country detected.")
-                            .foregroundColor(.secondary)
-                            .padding()
-                    }
-                }
-
-                Section(header: Text("All Countries")) {
-                    if viewModel.isLoading {
-                        ProgressView("Loading countries...")
-                    } else if let errorMessage = viewModel.errorMessage {
-                        VStack {
-                            Text(errorMessage)
-                                .foregroundColor(.red)
-                                .multilineTextAlignment(.center)
-                            Button("Retry") {
-                                viewModel.fetchCountries()
-                            }
-                            .padding()
-                        }
-                    } else {
-                        List(viewModel.filteredCountries, id: \ .name) { country in
-                            NavigationLink(destination: CountryDetailView(country: country)) {
-                                Text(country.name)
-                            }
-                        }
-                    }
-                }
-            }
-            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
-            .onAppear {
-                viewModel.requestLocation()
-                viewModel.fetchCountries()
-            }
-            .navigationTitle("Countries")
-        }
-    }
-}
-*/
-import SwiftUI
 
 struct CountryListView: View {
     @StateObject private var viewModel: CountryListViewModel = .init()
@@ -127,9 +68,6 @@ struct CountryListView: View {
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
             }
-            .onAppear {
-               
-            }
             .navigationTitle("Countries")
         }
     }
@@ -148,13 +86,14 @@ struct CountrySelectionSheet: View {
     @Binding var viewState: ViewState?
     var body: some View {
         NavigationView {
-            List(viewModel.countries, id: \ .name) { country in
+            List(viewModel.filteredCountries, id: \ .name) { country in
                 Button(action: {
                     addCountry(country)
                 }) {
                     Text(country.name)
                 }
             }
+            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
             .navigationTitle("Select a Country")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
