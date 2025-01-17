@@ -12,6 +12,7 @@ import CoreLocation
 
 final class CountryListViewModel: NSObject, ObservableObject {
     @Published var countries: [Country] = []
+    @Published var selectedCountries: [Country] = []
     @Published var filteredCountries: [Country] = []
     @Published var searchText: String = "" {
         didSet {
@@ -20,7 +21,7 @@ final class CountryListViewModel: NSObject, ObservableObject {
     }
     @Published var isLoading = false
     @Published var errorMessage: String?
-    @Published var userCountry: String = "Egypt" // Default country
+    @Published var viewState: ViewState? = nil
 
     private let fetchCountriesUseCase: FetchCountriesUseCaseProtocol
     private let locationManager: CLLocationManager
@@ -32,6 +33,7 @@ final class CountryListViewModel: NSObject, ObservableObject {
         super.init()
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        fetchCountries()
     }
 
     func fetchCountries(forceRefresh: Bool = false) {
@@ -50,6 +52,8 @@ final class CountryListViewModel: NSObject, ObservableObject {
                 }
             }, receiveValue: { [weak self] countries in
                 self?.countries = countries
+                self?.filteredCountries = countries
+                self?.requestLocation()
             })
             .store(in: &cancellables)
     }

@@ -14,7 +14,7 @@ extension CountryListViewModel: CLLocationManagerDelegate {
         case .authorizedWhenInUse, .authorizedAlways:
             manager.startUpdatingLocation()
         case .denied, .restricted:
-            userCountry = "Egypt" // Default country
+            setDefaultCountry(userCountry: "eg") // Default country
         default:
             break
         }
@@ -27,7 +27,7 @@ extension CountryListViewModel: CLLocationManagerDelegate {
     }
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        userCountry = "Egypt" // Default country
+        setDefaultCountry(userCountry: "eg") // Default country
     }
 
     private func reverseGeocode(location: CLLocation) {
@@ -38,9 +38,14 @@ extension CountryListViewModel: CLLocationManagerDelegate {
             }
             if let isoCode = placemark.isoCountryCode {
                 DispatchQueue.main.async {
-                    self.userCountry = isoCode // Store the ISO country code
+                    self.setDefaultCountry(userCountry: isoCode)
                 }
             }
+        }
+    }
+    private func setDefaultCountry(userCountry: String) {
+        if let country = self.getCountryByISOCode(userCountry) {
+            self.selectedCountries.append(country)
         }
     }
 }

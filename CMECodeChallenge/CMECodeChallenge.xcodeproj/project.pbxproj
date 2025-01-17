@@ -28,7 +28,6 @@
 		248AF1A02D3910C900620B7E /* LocalDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF19F2D3910C900620B7E /* LocalDataSourceProtocol.swift */; };
 		248AF1A22D3910E500620B7E /* RemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1A12D3910E500620B7E /* RemoteDataSourceProtocol.swift */; };
 		248AF1A42D39115C00620B7E /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1A32D39115C00620B7E /* RemoteDataSource.swift */; };
-		248AF1A82D39188100620B7E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1A72D39188100620B7E /* File.swift */; };
 		248AF1AA2D3919C200620B7E /* CountryListViewModel+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1A92D3919C200620B7E /* CountryListViewModel+Location.swift */; };
 		248AF1AE2D395A1B00620B7E /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1AD2D395A1B00620B7E /* MockNetworkManager.swift */; };
 		248AF1B02D395A5C00620B7E /* MockLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1AF2D395A5C00620B7E /* MockLocalDataSource.swift */; };
@@ -43,6 +42,7 @@
 		248AF1D52D3A8BC600620B7E /* MockRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1D42D3A8BC600620B7E /* MockRemoteDataSource.swift */; };
 		248AF1D72D3A986200620B7E /* CountriesListSuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 248AF1D62D3A986200620B7E /* CountriesListSuccessResponse.json */; };
 		248AF1D92D3A9A8900620B7E /* CountriesListFailureResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 248AF1D82D3A9A8900620B7E /* CountriesListFailureResponse.json */; };
+		248AF1DC2D3AAF1600620B7E /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AF1DB2D3AAF1600620B7E /* ViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,6 @@
 		248AF19F2D3910C900620B7E /* LocalDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSourceProtocol.swift; sourceTree = "<group>"; };
 		248AF1A12D3910E500620B7E /* RemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
 		248AF1A32D39115C00620B7E /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
-		248AF1A72D39188100620B7E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		248AF1A92D3919C200620B7E /* CountryListViewModel+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountryListViewModel+Location.swift"; sourceTree = "<group>"; };
 		248AF1AD2D395A1B00620B7E /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		248AF1AF2D395A5C00620B7E /* MockLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalDataSource.swift; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		248AF1D42D3A8BC600620B7E /* MockRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoteDataSource.swift; sourceTree = "<group>"; };
 		248AF1D62D3A986200620B7E /* CountriesListSuccessResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountriesListSuccessResponse.json; sourceTree = "<group>"; };
 		248AF1D82D3A9A8900620B7E /* CountriesListFailureResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountriesListFailureResponse.json; sourceTree = "<group>"; };
+		248AF1DB2D3AAF1600620B7E /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +241,7 @@
 			children = (
 				248AF1832D38FA3700620B7E /* Country.swift */,
 				248AF1882D38FC1B00620B7E /* AllCountriesEndPoint.swift */,
+				248AF1DB2D3AAF1600620B7E /* ViewState.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -300,19 +301,10 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
-		248AF1A52D39184700620B7E /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				248AF1A72D39188100620B7E /* File.swift */,
-			);
-			path = Location;
-			sourceTree = "<group>";
-		};
 		248AF1A62D39186300620B7E /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				248AF1722D38F64E00620B7E /* Network */,
-				248AF1A52D39184700620B7E /* Location */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -523,7 +515,6 @@
 				248AF1842D38FA3700620B7E /* Country.swift in Sources */,
 				248AF1742D38F67400620B7E /* NetworkManager.swift in Sources */,
 				248AF1922D390A7600620B7E /* FetchCountriesUseCase.swift in Sources */,
-				248AF1A82D39188100620B7E /* File.swift in Sources */,
 				248AF19E2D39107300620B7E /* LocalDataSource.swift in Sources */,
 				248AF1942D390A9900620B7E /* CountryRepositoryProtocol.swift in Sources */,
 				248AF1A22D3910E500620B7E /* RemoteDataSourceProtocol.swift in Sources */,
@@ -532,6 +523,7 @@
 				248AF1482D38F0B900620B7E /* CMECodeChallengeApp.swift in Sources */,
 				248AF19A2D390AEB00620B7E /* CountryService.swift in Sources */,
 				248AF1A02D3910C900620B7E /* LocalDataSourceProtocol.swift in Sources */,
+				248AF1DC2D3AAF1600620B7E /* ViewState.swift in Sources */,
 				248AF19C2D390B1400620B7E /* NetworkManagerProtocol.swift in Sources */,
 				248AF1902D390A4900620B7E /* FetchCountriesUseCaseProtocol.swift in Sources */,
 				248AF1AA2D3919C200620B7E /* CountryListViewModel+Location.swift in Sources */,
